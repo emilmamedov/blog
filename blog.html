@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Блог</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header_wrapper">
+            <div class="container">
+                <a href="/" class="logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="115" height="30" viewBox="0 0 115 30" fill="none">
+                        <path
+                            d="M32.2793 9.94026L36.3257 0H42.0172V13.592H38.5134V3.2802L34.1291 13.592H30.4029L26.0275 3.3255V13.592H22.5147V0H28.2152L32.2793 9.94026Z"
+                            fill="#6C5ADA" />
+                        <path
+                            d="M47.5457 8.16425L47.1722 10.5474H55.6206V13.592H43.2147L44.2286 6.79599L43.2147 0H55.5316V3.0446H47.1722L47.5457 5.42773H55.0158V8.16425H47.5457Z"
+                            fill="#6C5ADA" />
+                        <path
+                            d="M63.5078 0C65.0789 0 66.4603 0.280901 67.6519 0.842703C68.8495 1.4045 69.7774 2.19888 70.4354 3.22583C71.0935 4.25278 71.4226 5.44283 71.4226 6.79599C71.4226 8.14914 71.0935 9.3392 70.4354 10.3661C69.7774 11.3931 68.8495 12.1875 67.6519 12.7493C66.4603 13.3111 65.0789 13.592 63.5078 13.592H56.8468V0H63.5078ZM63.7834 10.2483C64.5779 10.2483 65.2686 10.1094 65.8555 9.83153C66.4484 9.54761 66.9019 9.14589 67.2162 8.62637C67.5363 8.10686 67.6964 7.49673 67.6964 6.79599C67.6964 6.09524 67.5363 5.48512 67.2162 4.9656C66.9019 4.44609 66.4484 4.04739 65.8555 3.76951C65.2686 3.48559 64.5779 3.34363 63.7834 3.34363H60.5197V10.2483H63.7834Z"
+                            fill="#6C5ADA" />
+                        <path d="M72.4236 13.592V0H76.1142V13.592H72.4236Z" fill="#6C5ADA" />
+                        <path
+                            d="M93.4678 13.592H89.5371L88.4254 10.9733H81.5333L80.4217 13.592H76.482L82.556 0H87.4027L93.4678 13.592ZM84.9749 2.86338L82.8139 7.95583H87.1448L84.9749 2.86338Z"
+                            fill="#6C5ADA" />
+                        <path
+                            d="M11.4276 22.5425C12.3821 22.7721 13.0995 23.1768 13.5797 23.7568C14.0599 24.3306 14.3001 25.0374 14.3001 25.8771C14.3001 26.6262 14.1311 27.2876 13.7931 27.8615C13.4552 28.4354 12.9513 28.8855 12.2813 29.2117C11.6173 29.5379 10.8051 29.701 9.84463 29.701H0L1.0316 22.7238L0 16.109H9.4978C10.316 16.109 11.0185 16.2419 11.6055 16.5077C12.1924 16.7735 12.64 17.1541 12.9483 17.6494C13.2566 18.1448 13.4107 18.7338 13.4107 19.4164C13.4107 20.0809 13.2477 20.688 12.9216 21.2377C12.6015 21.7874 12.1035 22.2224 11.4276 22.5425ZM9.66676 19.9963C9.66676 19.6218 9.53633 19.3197 9.27547 19.0902C9.02054 18.8546 8.66481 18.7368 8.2083 18.7368H3.92184L4.3576 21.4371H8.13716C8.58774 21.4371 8.95532 21.3072 9.2399 21.0474C9.52448 20.7816 9.66676 20.4312 9.66676 19.9963ZM8.86639 27.0732C9.39404 27.0732 9.80609 26.9403 10.1025 26.6745C10.4049 26.4087 10.5561 26.0402 10.5561 25.569C10.5561 25.0918 10.3901 24.7142 10.0581 24.4363C9.72605 24.1524 9.25175 24.0105 8.63517 24.0105H4.3665L3.90406 27.0732H8.86639Z"
+                            fill="#6C5ADA" />
+                        <path
+                            d="M24.4081 29.701L20.8331 24.8079H18.9033V29.701H15.2127V16.109H23.1364C24.1443 16.109 25.0306 16.2902 25.7955 16.6527C26.5662 17.0151 27.162 17.5286 27.583 18.1931C28.0098 18.8516 28.2233 19.6127 28.2233 20.4766C28.2233 21.1592 28.0869 21.7814 27.8142 22.3432C27.5415 22.8989 27.1502 23.3701 26.6403 23.7568C26.1364 24.1434 25.5405 24.4243 24.8528 24.5995L28.6857 29.701H24.4081ZM18.9033 18.8999V22.0532H22.6295C23.2105 22.0532 23.667 21.9143 23.9991 21.6364C24.3311 21.3585 24.4971 20.9719 24.4971 20.4766C24.4971 19.9812 24.3311 19.5946 23.9991 19.3167C23.673 19.0388 23.2165 18.8999 22.6295 18.8999H18.9033Z"
+                            fill="#6C5ADA" />
+                        <path
+                            d="M36.6414 30C35.0762 30 33.6948 29.704 32.4972 29.112C31.2996 28.52 30.3688 27.6894 29.7048 26.6201C29.0467 25.5449 28.7177 24.3065 28.7177 22.905C28.7177 21.5035 29.0467 20.2681 29.7048 19.1989C30.3688 18.1236 31.2996 17.29 32.4972 16.698C33.6948 16.106 35.0762 15.81 36.6414 15.81C38.2066 15.81 39.588 16.106 40.7856 16.698C41.9832 17.29 42.911 18.1236 43.5691 19.1989C44.2331 20.2681 44.5651 21.5035 44.5651 22.905C44.5651 24.3065 44.2331 25.5449 43.5691 26.6201C42.911 27.6894 41.9832 28.52 40.7856 29.112C39.588 29.704 38.2066 30 36.6414 30ZM36.6414 26.6383C37.4951 26.6383 38.2362 26.4872 38.8646 26.1852C39.499 25.8831 39.9852 25.4512 40.3231 24.8894C40.667 24.3276 40.8389 23.6661 40.8389 22.905C40.8389 22.1438 40.667 21.4824 40.3231 20.9206C39.9852 20.3588 39.499 19.9268 38.8646 19.6248C38.2362 19.3228 37.4951 19.1717 36.6414 19.1717C35.7876 19.1717 35.0436 19.3228 34.4092 19.6248C33.7808 19.9268 33.2946 20.3588 32.9508 20.9206C32.6128 21.4824 32.4439 22.1438 32.4439 22.905C32.4439 23.6661 32.6128 24.3276 32.9508 24.8894C33.2946 25.4512 33.7808 25.8831 34.4092 26.1852C35.0436 26.4872 35.7876 26.6383 36.6414 26.6383Z"
+                            fill="#6C5ADA" />
+                        <path d="M44.1306 16.109H57.9949V19.4526H52.9081V29.701H49.2174V19.4526H44.1306V16.109Z"
+                            fill="#6C5ADA" />
+                        <path
+                            d="M69.1892 21.138V16.109H72.8798V29.701H69.1892V24.4545H62.3682V29.701H58.6776V16.109H62.3682V21.138H69.1892Z"
+                            fill="#6C5ADA" />
+                        <path
+                            d="M78.3935 24.2732L78.02 26.6564H86.4684V29.701H74.0626L75.0764 22.905L74.0626 16.109H86.3795V19.1536H78.02L78.3935 21.5367H85.8637V24.2732H78.3935Z"
+                            fill="#6C5ADA" />
+                        <path
+                            d="M96.8901 29.701L93.3151 24.8079H91.3853V29.701H87.6947V16.109H95.6184C96.6263 16.109 97.5126 16.2902 98.2774 16.6527C99.0481 17.0151 99.644 17.5286 100.065 18.1931C100.492 18.8516 100.705 19.6127 100.705 20.4766C100.705 21.1592 100.569 21.7814 100.296 22.3432C100.023 22.8989 99.6321 23.3701 99.1223 23.7568C98.6183 24.1434 98.0225 24.4243 97.3348 24.5995L101.168 29.701H96.8901ZM91.3853 18.8999V22.0532H95.1115C95.6925 22.0532 96.149 21.9143 96.481 21.6364C96.813 21.3585 96.979 20.9719 96.979 20.4766C96.979 19.9812 96.813 19.5946 96.481 19.3167C96.1549 19.0388 95.6984 18.8999 95.1115 18.8999H91.3853Z"
+                            fill="#6C5ADA" />
+                        <path
+                            d="M105.004 25.2428C105.087 25.8167 105.425 26.2698 106.018 26.602C106.611 26.9282 107.393 27.0913 108.366 27.0913C109.279 27.0913 109.99 26.9705 110.5 26.7289C111.016 26.4872 111.274 26.1429 111.274 25.6959C111.274 25.4542 111.209 25.2549 111.078 25.0978C110.948 24.9347 110.725 24.8018 110.411 24.6991C110.103 24.5964 109.673 24.5179 109.122 24.4635L106.649 24.2279C104.829 24.0588 103.498 23.642 102.656 22.9775C101.82 22.3069 101.402 21.3766 101.402 20.1866C101.402 19.2623 101.669 18.474 102.203 17.8216C102.736 17.1631 103.489 16.6648 104.462 16.3265C105.44 15.9821 106.587 15.81 107.903 15.81C109.172 15.81 110.307 15.9972 111.309 16.3718C112.311 16.7463 113.103 17.2719 113.684 17.9485C114.271 18.625 114.594 19.4073 114.653 20.2953H110.9C110.835 19.806 110.533 19.4224 109.993 19.1445C109.46 18.8606 108.739 18.7187 107.832 18.7187C106.99 18.7187 106.329 18.8334 105.849 19.063C105.375 19.2925 105.138 19.6188 105.138 20.0416C105.138 20.3739 105.286 20.6336 105.582 20.8209C105.879 21.0021 106.397 21.132 107.139 21.2105L109.798 21.4733C111.06 21.5941 112.071 21.8025 112.83 22.0985C113.589 22.3945 114.14 22.7993 114.484 23.3127C114.828 23.8262 115 24.4756 115 25.2609C115 26.2033 114.721 27.0339 114.164 27.7528C113.607 28.4656 112.821 29.0184 111.807 29.411C110.794 29.8037 109.623 30 108.295 30C106.925 30 105.713 29.8037 104.657 29.411C103.602 29.0123 102.778 28.4535 102.185 27.7347C101.592 27.0158 101.281 26.1852 101.251 25.2428H105.004Z"
+                            fill="#6C5ADA" />
+                    </svg>
+                </a>
+                <nav class="menu">
+                    <ul class="menu_list">
+                        <li><a href="">Решения</a></li>
+                        <li><a href="">
+                                SEO продвижение
+                            </a></li>
+                        <li><a href="">
+                                Контекстная реклама
+                            </a></li>
+                        <li><a href="">
+                                Таргет
+                            </a></li>
+                        <li><a href="">
+                                Веб-аналитика
+                            </a></li>
+                        <li><a href="">
+                                Ещё
+                            </a></li>
+                    </ul>
+                </nav>
+                <div class="socs">
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <circle cx="20" cy="20" r="20" fill="#6C5ADA" />
+                            <path
+                                d="M28.2952 12.1818L9.69018 18.7098C8.94148 19.0138 8.68825 19.6226 9.50922 19.953L14.2822 21.3331L25.8227 14.8436C26.4528 14.4362 27.0979 14.5448 26.5428 14.993L16.6311 23.1586L16.3197 26.6142C16.6081 27.1478 17.1362 27.1503 17.473 26.8851L20.2152 24.5242L24.9117 27.7241C26.0025 28.3117 26.596 27.9325 26.8307 26.8555L29.9112 13.5837C30.231 12.258 29.6856 11.6739 28.2952 12.1818Z"
+                                fill="#EFEFEE" />
+                        </svg>
+                    </a>
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <g id="whatsapp">
+                                <circle id="Ellipse 30" cx="20" cy="20" r="20" fill="#6C5ADA" />
+                                <path id="Vector"
+                                    d="M20 10C25.523 10 30 14.477 30 20C30 25.523 25.523 30 20 30C18.2328 30.0029 16.4967 29.5352 14.97 28.645L10.004 30L11.356 25.032C10.4651 23.5049 9.99706 21.768 10 20C10 14.477 14.477 10 20 10ZM16.592 15.3L16.392 15.308C16.2625 15.3159 16.136 15.3499 16.02 15.408C15.9115 15.4694 15.8125 15.5462 15.726 15.636C15.606 15.749 15.538 15.847 15.465 15.942C15.0951 16.4229 14.896 17.0133 14.899 17.62C14.901 18.11 15.029 18.587 15.229 19.033C15.638 19.935 16.311 20.89 17.199 21.775C17.413 21.988 17.623 22.202 17.849 22.401C18.9524 23.3725 20.2673 24.073 21.689 24.447L22.257 24.534C22.442 24.544 22.627 24.53 22.813 24.521C23.1043 24.506 23.3886 24.4271 23.646 24.29C23.777 24.2225 23.9048 24.1491 24.029 24.07C24.029 24.07 24.072 24.042 24.154 23.98C24.289 23.88 24.372 23.809 24.484 23.692C24.567 23.606 24.639 23.505 24.694 23.39C24.772 23.227 24.85 22.916 24.882 22.657C24.906 22.459 24.899 22.351 24.896 22.284C24.892 22.177 24.803 22.066 24.706 22.019L24.124 21.758C24.124 21.758 23.254 21.379 22.722 21.137C22.6663 21.1127 22.6067 21.0988 22.546 21.096C22.4776 21.089 22.4085 21.0967 22.3433 21.1186C22.2781 21.1405 22.2183 21.1761 22.168 21.223C22.163 21.221 22.096 21.278 21.373 22.154C21.3315 22.2098 21.2744 22.2519 21.2088 22.2751C21.1433 22.2982 21.0723 22.3013 21.005 22.284C20.9399 22.2665 20.876 22.2445 20.814 22.218C20.69 22.166 20.647 22.146 20.562 22.11C19.9881 21.8595 19.4567 21.5211 18.987 21.107C18.861 20.997 18.744 20.877 18.624 20.761C18.2306 20.3842 17.8877 19.958 17.604 19.493L17.545 19.398C17.5026 19.3342 17.4684 19.2653 17.443 19.193C17.405 19.046 17.504 18.928 17.504 18.928C17.504 18.928 17.747 18.662 17.86 18.518C17.97 18.378 18.063 18.242 18.123 18.145C18.241 17.955 18.278 17.76 18.216 17.609C17.936 16.925 17.646 16.244 17.348 15.568C17.289 15.434 17.114 15.338 16.955 15.319C16.901 15.313 16.847 15.307 16.793 15.303C16.6587 15.2963 16.5241 15.2977 16.39 15.307L16.592 15.3Z"
+                                    fill="#EFEFEE" />
+                            </g>
+                        </svg>
+                    </a>
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <circle cx="20" cy="20" r="20" fill="#6C5ADA" />
+                            <path
+                                d="M23.5569 21.906L23.1019 22.359C23.1019 22.359 22.0189 23.435 19.0639 20.497C16.1089 17.559 17.1919 16.483 17.1919 16.483L17.4779 16.197C18.1849 15.495 18.2519 14.367 17.6349 13.543L16.3749 11.86C15.6109 10.84 14.1359 10.705 13.2609 11.575L11.6909 13.135C11.2579 13.567 10.9679 14.125 11.0029 14.745C11.0929 16.332 11.8109 19.745 15.8149 23.727C20.0619 27.949 24.0469 28.117 25.6759 27.965C26.1919 27.917 26.6399 27.655 27.0009 27.295L28.4209 25.883C29.3809 24.93 29.1109 23.295 27.8829 22.628L25.9729 21.589C25.1669 21.152 24.1869 21.28 23.5569 21.906Z"
+                                fill="#EFEFEE" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="hamburger">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="20" viewBox="0 0 27 20" fill="none">
+                        <path d="M1 1.3965H19.0504C20.4554 1.3965 21.8908 1.45489 23.2796 1.22028C24.0865 1.08396 24.9734 1 25.7966 1M1 10.317H17.0209C19.818 10.317 22.5965 9.92046 25.3885 9.92046M1.71357 18.8419C7.6166 18.8419 13.5424 18.7262 19.4409 18.9465C20.9733 19.0038 22.4755 18.941 24.0045 18.941C24.3183 18.941 25.854 19.1255 26 18.8419" stroke="#6C5ADA" stroke-linecap="round"/>
+                      </svg>
+                </div>
+                <div class="mob_menu">
+                    <nav class="menu">
+                        <ul class="menu_list">
+                            <li><a href="">Решения</a></li>
+                            <li><a href="">
+                                    SEO продвижение
+                                </a></li>
+                            <li><a href="">
+                                    Контекстная реклама
+                                </a></li>
+                            <li><a href="">
+                                    Таргет
+                                </a></li>
+                            <li><a href="">
+                                    Веб-аналитика
+                                </a></li>
+                            <li><a href="">
+                                    Ещё
+                                </a></li>
+                        </ul>
+                    </nav>
+                    <div class="socs">
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                <circle cx="20" cy="20" r="20" fill="#6C5ADA" />
+                                <path
+                                    d="M28.2952 12.1818L9.69018 18.7098C8.94148 19.0138 8.68825 19.6226 9.50922 19.953L14.2822 21.3331L25.8227 14.8436C26.4528 14.4362 27.0979 14.5448 26.5428 14.993L16.6311 23.1586L16.3197 26.6142C16.6081 27.1478 17.1362 27.1503 17.473 26.8851L20.2152 24.5242L24.9117 27.7241C26.0025 28.3117 26.596 27.9325 26.8307 26.8555L29.9112 13.5837C30.231 12.258 29.6856 11.6739 28.2952 12.1818Z"
+                                    fill="#EFEFEE" />
+                            </svg>
+                        </a>
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                <g id="whatsapp">
+                                    <circle id="Ellipse 30" cx="20" cy="20" r="20" fill="#6C5ADA" />
+                                    <path id="Vector"
+                                        d="M20 10C25.523 10 30 14.477 30 20C30 25.523 25.523 30 20 30C18.2328 30.0029 16.4967 29.5352 14.97 28.645L10.004 30L11.356 25.032C10.4651 23.5049 9.99706 21.768 10 20C10 14.477 14.477 10 20 10ZM16.592 15.3L16.392 15.308C16.2625 15.3159 16.136 15.3499 16.02 15.408C15.9115 15.4694 15.8125 15.5462 15.726 15.636C15.606 15.749 15.538 15.847 15.465 15.942C15.0951 16.4229 14.896 17.0133 14.899 17.62C14.901 18.11 15.029 18.587 15.229 19.033C15.638 19.935 16.311 20.89 17.199 21.775C17.413 21.988 17.623 22.202 17.849 22.401C18.9524 23.3725 20.2673 24.073 21.689 24.447L22.257 24.534C22.442 24.544 22.627 24.53 22.813 24.521C23.1043 24.506 23.3886 24.4271 23.646 24.29C23.777 24.2225 23.9048 24.1491 24.029 24.07C24.029 24.07 24.072 24.042 24.154 23.98C24.289 23.88 24.372 23.809 24.484 23.692C24.567 23.606 24.639 23.505 24.694 23.39C24.772 23.227 24.85 22.916 24.882 22.657C24.906 22.459 24.899 22.351 24.896 22.284C24.892 22.177 24.803 22.066 24.706 22.019L24.124 21.758C24.124 21.758 23.254 21.379 22.722 21.137C22.6663 21.1127 22.6067 21.0988 22.546 21.096C22.4776 21.089 22.4085 21.0967 22.3433 21.1186C22.2781 21.1405 22.2183 21.1761 22.168 21.223C22.163 21.221 22.096 21.278 21.373 22.154C21.3315 22.2098 21.2744 22.2519 21.2088 22.2751C21.1433 22.2982 21.0723 22.3013 21.005 22.284C20.9399 22.2665 20.876 22.2445 20.814 22.218C20.69 22.166 20.647 22.146 20.562 22.11C19.9881 21.8595 19.4567 21.5211 18.987 21.107C18.861 20.997 18.744 20.877 18.624 20.761C18.2306 20.3842 17.8877 19.958 17.604 19.493L17.545 19.398C17.5026 19.3342 17.4684 19.2653 17.443 19.193C17.405 19.046 17.504 18.928 17.504 18.928C17.504 18.928 17.747 18.662 17.86 18.518C17.97 18.378 18.063 18.242 18.123 18.145C18.241 17.955 18.278 17.76 18.216 17.609C17.936 16.925 17.646 16.244 17.348 15.568C17.289 15.434 17.114 15.338 16.955 15.319C16.901 15.313 16.847 15.307 16.793 15.303C16.6587 15.2963 16.5241 15.2977 16.39 15.307L16.592 15.3Z"
+                                        fill="#EFEFEE" />
+                                </g>
+                            </svg>
+                        </a>
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                <circle cx="20" cy="20" r="20" fill="#6C5ADA" />
+                                <path
+                                    d="M23.5569 21.906L23.1019 22.359C23.1019 22.359 22.0189 23.435 19.0639 20.497C16.1089 17.559 17.1919 16.483 17.1919 16.483L17.4779 16.197C18.1849 15.495 18.2519 14.367 17.6349 13.543L16.3749 11.86C15.6109 10.84 14.1359 10.705 13.2609 11.575L11.6909 13.135C11.2579 13.567 10.9679 14.125 11.0029 14.745C11.0929 16.332 11.8109 19.745 15.8149 23.727C20.0619 27.949 24.0469 28.117 25.6759 27.965C26.1919 27.917 26.6399 27.655 27.0009 27.295L28.4209 25.883C29.3809 24.93 29.1109 23.295 27.8829 22.628L25.9729 21.589C25.1669 21.152 24.1869 21.28 23.5569 21.906Z"
+                                    fill="#EFEFEE" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </header>
+    <main class="main">
+        <section class="banner">
+            <div class="container">
+
+                <h1 class="title">
+                    SEO vs. Paid Search:
+                </h1>
+                <div class="container__block">
+                    <div class="container__block-left">
+                        <div class="blog__date">
+                            October 18, 2024
+                        </div>
+                        <div class="blog__category">
+                            Marketing<svg xmlns="http://www.w3.org/2000/svg" width="14" height="8" viewBox="0 0 14 8"
+                                fill="none">
+                                <path
+                                    d="M7 6.17143C7.44585 6.17143 7.88168 6.04408 8.25239 5.80548C8.62309 5.56688 8.91203 5.22775 9.08264 4.83097C9.25326 4.43419 9.2979 3.99759 9.21092 3.57638C9.12394 3.15516 8.90925 2.76825 8.59399 2.46457C8.27873 2.16089 7.87706 1.95408 7.43978 1.87029C7.0025 1.78651 6.54925 1.82951 6.13734 1.99386C5.72543 2.15821 5.37337 2.43653 5.12567 2.79362C4.87797 3.15071 4.74576 3.57053 4.74576 4C4.74576 4.5759 4.98326 5.12821 5.40601 5.53543C5.82876 5.94265 6.40214 6.17143 7 6.17143ZM7 2.51429C7.30505 2.51429 7.60325 2.60142 7.8569 2.76467C8.11054 2.92793 8.30823 3.15996 8.42497 3.43144C8.54171 3.70292 8.57225 4.00165 8.51274 4.28985C8.45322 4.57805 8.30633 4.84278 8.09062 5.05056C7.87492 5.25834 7.60009 5.39984 7.3009 5.45717C7.00171 5.51449 6.69159 5.48507 6.40976 5.37262C6.12793 5.26017 5.88704 5.06974 5.71756 4.82542C5.54809 4.58109 5.45763 4.29385 5.45763 4C5.45763 3.60596 5.62013 3.22807 5.90938 2.94944C6.19863 2.67082 6.59094 2.51429 7 2.51429ZM13.6441 0H0.355932C0.261533 0 0.171 0.0361223 0.10425 0.10042C0.0374999 0.164719 0 0.251926 0 0.342857V7.65714C0 7.74807 0.0374999 7.83528 0.10425 7.89958C0.171 7.96388 0.261533 8 0.355932 8H13.6441C13.7385 8 13.829 7.96388 13.8958 7.89958C13.9625 7.83528 14 7.74807 14 7.65714V0.342857C14 0.251926 13.9625 0.164719 13.8958 0.10042C13.829 0.0361223 13.7385 0 13.6441 0ZM0.711864 2.904C1.26453 2.76238 1.76855 2.48265 2.17294 2.09312C2.57732 1.70359 2.86772 1.21808 3.01475 0.685714H10.9853C11.1323 1.21808 11.4227 1.70359 11.8271 2.09312C12.2314 2.48265 12.7355 2.76238 13.2881 2.904V5.096C12.7355 5.23762 12.2314 5.51735 11.8271 5.90688C11.4227 6.29641 11.1323 6.78192 10.9853 7.31429H3.01475C2.86772 6.78192 2.57732 6.29641 2.17294 5.90688C1.76855 5.51735 1.26453 5.23762 0.711864 5.096V2.904ZM13.2881 2.188C12.9276 2.06669 12.6002 1.8686 12.3302 1.6085C12.0601 1.3484 11.8545 1.03298 11.7286 0.685714H13.2881V2.188ZM2.27144 0.685714C2.1455 1.03298 1.93986 1.3484 1.66984 1.6085C1.39982 1.8686 1.07237 2.06669 0.711864 2.188V0.685714H2.27144ZM0.711864 5.812C1.07237 5.93331 1.39982 6.1314 1.66984 6.3915C1.93986 6.6516 2.1455 6.96702 2.27144 7.31429H0.711864V5.812ZM11.7286 7.31429C11.8545 6.96702 12.0601 6.6516 12.3302 6.3915C12.6002 6.1314 12.9276 5.93331 13.2881 5.812V7.31429H11.7286Z"
+                                    fill="#EFEFEE" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="container__block-center">
+                        <h2 class="subtitle">
+                            <span>Which strategy is right</span>
+                            for Your business?
+                        </h2>
+                        <p class="text">
+                            In today’s digital world, every business aims to get found online, regardless of size.
+                            Whether
+                            you’re a small local shop or a global corporation, growth relies on reaching the right
+                            audience.
+                            Two main strategies for search engines dominate this effort: SEO (Search Engine
+                            Optimization)
+                            and Paid Search (also known as PPC or Pay-Per-Click). Both can drive traffic and increase
+                            visibility, but in very different ways.
+                        </p>
+                    </div>
+                    <div class="container__block-right">
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="center">
+            <div class="container">
+                <div class="blog__wrapper">
+                    <div class="blog__conatiner">
+                        <div class="blog__left">
+                            <h3>
+                                What is SEO?
+                            </h3>
+                        </div>
+                        <div class="blog__center">
+                            <h3>
+                                SEO focuses on <span>improving your website’s organic</span> visibility on search
+                                engines.
+                            </h3>
+                            <p>
+                                This involves refining your website so that when users look for terms connected to your
+                                business, your site ranks more prominently in search results. The aim is to ensure that
+                                search engines recognize your website as relevant and valuable, placing it higher on the
+                                results page.
+                            </p>
+                            <h4>
+                                On-page SEO
+                            </h4>
+                            <p>
+                                optimizes content and site structure, such as title tags and meta descriptions, to
+                                ensure content is relevant and answers searchers’ queries.
+                            </p>
+                            <h4>
+                                Off-page SEO
+                            </h4>
+                            <p>builds authority through backlinks from reputable sites, improving search engines’ trust
+                                in your content.</p>
+                            <p>
+                                The goal is to improve rankings and attract organic traffic without paying for ads. SEO
+                                provides long-term results, is cost-effective, and builds credibility, but it takes time
+                                to see results, requires constant updates due to algorithm changes, and rankings can be
+                                unpredictable.
+                            </p>
+                        </div>
+                        <div class="blog__right">
+
+                        </div>
+                    </div>
+                </div>
+                 <div class="blog__wrapper">
+                    <div class="blog__conatiner">
+                        <div class="blog__left">
+                            <h3>
+                                What is SEO?
+                            </h3>
+                        </div>
+                        <div class="blog__center">
+                            <h3>
+                                Paid Search, or PPC, lets you place ads in <span>search results</span>, typically above organic listings. 
+                            </h3>
+                            <p>
+                                You place bids on specific keywords, and every time someone clicks on your ad, you incur a cost. This method provides instant visibility, precise control over who sees your ads, and measurable data to monitor performance. However, it can become expensive, only works as long as you’re paying, and some users may grow tired of ads, preferring organic search results instead.
+                            </p>
+                            <h4 style="color: var(---, #252525);">
+                                SEO vs. Paid Search:<br> Which One is Right?
+                            </h4>
+                            <p>Choosing between SEO and <br>Paid Search depends on your <br>goals, timeline, and budget:
+                            </p>
+                        </div>
+                        <div class="blog__right">
+
+                        </div>
+                    </div>
+                    <div class="dot__block">
+                        <div class="dot__block-item">
+                            <div class="dot__block-item__left">
+                                01.
+                            </div>
+                            <div class="dot__block-item__right">
+                                <h4>
+                                    Need quick results?
+                                </h4>
+                                <p>
+                                    Paid Search is ideal if you need fast traffic, such as during a product launch or
+                                    time-sensitive promotion.
+                                </p>
+                            </div>
+                            <div class="dot__block-item__center"></div>
+                        </div>
+                    </div>
+                    <div class="dot__block">
+                        <div class="dot__block-item">
+                            <div class="dot__block-item__left">
+                                02.
+                            </div>
+                            <div class="dot__block-item__right">
+                                <h4>
+                                    On a tight budget?
+                                </h4>
+                                <p>
+                                    SEO is the better long-term investment, offering traffic without ongoing ad costs.
+                                </p>
+                            </div>
+                            <div class="dot__block-item__center"></div>
+                        </div>
+                    </div>
+                    <div class="dot__block">
+                        <div class="dot__block-item">
+                            <div class="dot__block-item__left">
+                                03.
+                            </div>
+                            <div class="dot__block-item__right">
+                                <h4>
+                                    Looking for sustained growth?
+                                </h4>
+                                <p>
+                                    SEO builds credibility and long-lasting traffic once high rankings are achieved.
+                                </p>
+                            </div>
+                            <div class="dot__block-item__center"></div>
+                        </div>
+                    </div>
+                    <div class="dot__block">
+                        <div class="dot__block-item">
+                            <div class="dot__block-item__left">
+                                04.
+                            </div>
+                            <div class="dot__block-item__right">
+                                <h4>
+                                    In a competitive niche?
+                                </h4>
+                                <p>
+
+                                    Paid Search can give you an edge in tough industries, allowing you to quickly
+                                    compete for valuable keywords. </p>
+                            </div>
+                            <div class="dot__block-item__center"></div>
+                        </div>
+                    </div>
+                    <div class="dot__block">
+                        <div class="dot__block-item">
+                            <div class="dot__block-item__left">
+                                05.
+                            </div>
+                            <div class="dot__block-item__right">
+                                <h4>
+                                    Want to test new markets or messaging?
+                                </h4>
+                                <p>
+                                    Paid Search allows quick experimentation, with data you can later use to fine-tune
+                                    your SEO strategy.
+                                </p>
+                            </div>
+                            <div class="dot__block-item__center"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog__wrapper">
+                    <div class="blog__conatiner">
+                        <div class="blog__left">
+                            <h3>
+                                Key Considerations
+                            </h3>
+                        </div>
+                        <div class="blog__center">
+                            <h3>
+                                Both SEO and Paid Search offer <span>unique</span> advantages depending on your business needs. 
+                                </h3>
+                            <p>
+                                Here are some quick points to <br>consider when choosing <br>between these strategies:
+                            </p>
+                        </div>
+                        <div class="blog__right">
+
+                        </div>
+                    </div>
+                    <ul class="blog__case1">
+                        <li class="item1">
+                            Time to Results
+                        </li>
+                        <li class="item2">
+                            Long-Term <br>Benefits
+                        </li>
+                        <li class="item3">
+                            Budget <br>Requirements
+                        </li>
+                    </ul>
+                    <ul class="blog__case2">
+                        <li class="item4">
+                            Adaptability
+                        </li>
+                        <li class="item5">
+                            Audience <br>Trust
+                        </li>
+                        <li class="item6">
+                            Audience <br>Trust
+                        </li>
+                    </ul>
+                    <ul class="blog__case3 blog__case2">
+                        <li class="item1">
+                            Time to Results
+                        </li>
+                        <li class="item2">
+                            Long-Term <br>Benefits
+                        </li>
+                        <li class="item3">
+                            Budget <br>Requirements
+                        </li>
+                        <li class="item4">
+                            Adaptability
+                        </li>
+                        <li class="item5">
+                            Audience <br>Trust
+                        </li>
+                        <li class="item6">
+                            Audience <br>Trust
+                        </li>
+                    </ul>
+                </div>
+                <div class="blog__wrapper">
+                    <div class="blog__conatiner">
+                        <div class="blog__left">
+                            <h3>
+                                What is Paid Search?
+                            </h3>
+                        </div>
+                        <div class="blog__center">
+                            <h3>
+                                There’s no <span>one-size-fits-all</span> answer to whether SEO or Paid Search is
+                                better. It depends on your specific business needs.
+                            </h3>
+                            <p>
+                                Paid Search provides quick outcomes for businesses with available budget, while SEO is a
+                                slower but sustainable strategy for long-term growth. Combining both methods allows you
+                                to boost visibility rapidly while building a lasting online presence. This balanced
+                                approach helps attract more traffic, increase brand awareness, and support the overall
+                                growth of your business over time.
+                            </p>
+                            <h4 style="color: var(---, #252525);">
+                                SEO vs. Paid Search:<br> Which One is Right?
+                            </h4>
+                            <p>Choosing between SEO and <br>Paid Search depends on your <br>goals, timeline, and budget:
+                            </p>
+                        </div>
+                        <div class="blog__right">
+
+                        </div>
+                    </div>
+                    <div class="dot__block">
+                        <div class="dot__block-item">
+                            <div class="dot__block-item__left">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"
+                                    fill="none">
+                                    <circle cx="5" cy="5" r="5" fill="#6C5ADA" />
+                                </svg>
+                            </div>
+                            <div class="dot__block-item__right">
+                                <h4>
+                                    Need quick results?
+                                </h4>
+                                <p>
+                                    Paid Search is ideal if you need fast traffic, such as during a product launch or
+                                    time-sensitive promotion.
+                                </p>
+                            </div>
+                            <div class="dot__block-item__center"></div>
+                        </div>
+                    </div>
+                    <div class="dot__block">
+                        <div class="dot__block-item">
+                            <div class="dot__block-item__left">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"
+                                    fill="none">
+                                    <circle cx="5" cy="5" r="5" fill="#6C5ADA" />
+                                </svg>
+                            </div>
+                            <div class="dot__block-item__right">
+                                <h4>
+                                    On a tight budget?
+                                </h4>
+                                <p>
+                                    SEO is the better long-term investment, offering traffic without ongoing ad costs.
+                                </p>
+                            </div>
+                            <div class="dot__block-item__center"></div>
+                        </div>
+                    </div>
+                    <div class="dot__block">
+                        <div class="dot__block-item">
+                            <div class="dot__block-item__left">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"
+                                    fill="none">
+                                    <circle cx="5" cy="5" r="5" fill="#6C5ADA" />
+                                </svg>
+                            </div>
+                            <div class="dot__block-item__right">
+                                <h4>
+                                    Looking for sustained growth?
+                                </h4>
+                                <p>
+                                    SEO builds credibility and long-lasting traffic once high rankings are achieved.
+                                </p>
+                            </div>
+                            <div class="dot__block-item__center"></div>
+                        </div>
+                    </div>
+                    <div class="dot__block">
+                        <div class="dot__block-item">
+                            <div class="dot__block-item__left">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"
+                                    fill="none">
+                                    <circle cx="5" cy="5" r="5" fill="#6C5ADA" />
+                                </svg>
+                            </div>
+                            <div class="dot__block-item__right">
+                                <h4>
+                                    In a competitive niche?
+                                </h4>
+                                <p>
+
+                                    Paid Search can give you an edge in tough industries, allowing you to quickly
+                                    compete for valuable keywords. </p>
+                            </div>
+                            <div class="dot__block-item__center"></div>
+                        </div>
+                    </div>
+                    <div class="dot__block">
+                        <div class="dot__block-item">
+                            <div class="dot__block-item__left">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"
+                                    fill="none">
+                                    <circle cx="5" cy="5" r="5" fill="#6C5ADA" />
+                                </svg>
+                            </div>
+                            <div class="dot__block-item__right">
+                                <h4>
+                                    Want to test new markets or messaging?
+                                </h4>
+                                <p>
+                                    Paid Search allows quick experimentation, with data you can later use to fine-tune
+                                    your SEO strategy.
+                                </p>
+                            </div>
+                            <div class="dot__block-item__center"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog__wrapper" style="margin-bottom: 0;">
+                    <div class="blog__conatiner">
+                        <div class="blog__left">
+                            <h3>
+                                Combining SEO and Paid Search
+                            </h3>
+                        </div>
+                        <div class="blog__center">
+                            <h3>
+                            </h3>
+                            <p>
+                            </p>
+                        </div>
+                        <div class="blog__right">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="blog__wrapper">
+                    <div class="blog__wrapper-new__title">
+                        <h3>
+                            The best approach often <span>combines</span>
+                        </h3>
+                    </div>
+                    <div class="blog__conatiner">
+                        <div class="blog__left new_title">
+
+                        </div>
+                        <div class="blog__center">
+                            <h3>
+                                <span>both strategies.</span> Paid Search can drive immediate traffic while you build
+                                your SEO foundation.
+                            </h3>
+                            <p>
+                                As your organic search rankings gradually improve, you can reduce your reliance on PPC
+                                or focus on targeting different keywords. Paid search campaigns offer helpful insights,
+                                allowing you to refine your SEO strategies based on what performs well. Additionally,
+                                the data gathered from these campaigns can be used to optimize your website for better
+                                long-term organic results.​
+                            </p>
+                        </div>
+                        <div class="blog__right">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="blog__wrapper" style="margin-bottom: 0;">
+                    <div class="blog__conatiner">
+                        <div class="blog__left">
+                            <h3>
+                                SEO vs. Paid Search: Key Differences
+                            </h3>
+                        </div>
+                        <div class="blog__center">
+                            <h3>
+                                The table below highlights the <span>primary differences</span> between SEO and Paid
+                                Search.
+                            </h3>
+                            <p>
+                                Key aspects like time to results, cost, longevity, and user trust are outlined to help
+                                you assess which approach best suits your business needs.
+                            </p>
+                        </div>
+                        <div class="blog__right">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="blog__wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>
+                                    Criteria
+                                </th>
+                                <th>
+                                    SEO
+                                </th>
+                                <th>
+                                    Paid Search (PPC)
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    Time to Results
+                                </td>
+                                <td>
+                                    Long-term, takes weeks or months
+                                </td>
+                                <td>
+                                    Immediate, right after campaign launch
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Cost
+                                </td>
+                                <td>
+                                    Depends on team time and effort
+                                </td>
+                                <td>
+                                    Pay per click, requires a dedicated budget
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Longevity
+                                </td>
+                                <td>
+                                    Sustained growth and long-term results
+                                </td>
+                                <td>
+                                    Works only as long as the campaign is funded
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    User Trust
+                                </td>
+                                <td>
+                                    Higher, as organic results are seen as credible
+                                </td>
+                                <td>
+                                    May be viewed as ads, potentially less trusted
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="blog__wrapper">
+                    <div class="blog__conatiner">
+                        <div class="blog__left">
+                            <h3>
+                                Conclusion
+                            </h3>
+                        </div>
+                        <div class="blog__center">
+                            <h3>
+                                There’s no <span>one-size-fits-all</span> answer to whether SEO or Paid Search is
+                                better. It depends on your specific business needs.
+                            </h3>
+                            <p>
+                                Paid Search provides quick outcomes for businesses with available budget, while SEO is a
+                                slower but sustainable strategy for long-term growth. Combining both methods allows you
+                                to boost visibility rapidly while building a lasting online presence. This balanced
+                                approach helps attract more traffic, increase brand awareness, and support the overall
+                                growth of your business over time.
+                            </p>
+                        </div>
+                        <div class="blog__right">
+
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer_top">
+                    <div class="footer__row">
+                        <div class="footer__row-wrapper">
+                            <h5 class="footer__row-title">SEO продвижение</h5>
+                            <ul>
+                                <li><a href="">
+                                        SEO-аудит
+                                    </a></li>
+                                <li><a href="">
+                                        SEO-продвижение с гарантией
+                                    </a></li>
+                                <li><a href="">
+                                        Базовое SEO
+                                    </a></li>
+                                <li><a href="">
+                                        Западное SEO
+                                    </a></li>
+                                <li><a href="">
+                                        SEO-переезд сайта
+                                    </a></li>
+                                <li><a href="">
+                                        SEO-контракт
+                                    </a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__row-wrapper">
+                            <h5 class="footer__row-title">Направления</h5>
+                            <ul>
+                                <li><a href="">
+                                        Исследования
+                                    </a></li>
+                                <li><a href="">
+                                        Интернет маркетинг
+                                    </a></li>
+                                <li><a href="">
+                                        Веб-разработка
+                                    </a></li>
+                                <li><a href="">
+                                        Внедрение CRM
+                                    </a></li>
+                                <li><a href="">
+                                        Контент маркетинг
+                                    </a></li>
+                                <li><a href="">
+                                        Управление репутацией
+                                    </a></li>
+                                <li><a href="">
+                                        Брендинг и айдентика
+                                    </a></li>
+                                <li><a href="">
+                                        Видео и графика
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__row">
+                        <div class="footer__row-wrapper">
+                            <h5 class="footer__row-title">Контекстная реклама</h5>
+                            <ul>
+                                <li><a href="">
+                                        Аудит рекламы
+                                    </a></li>
+                                <li><a href="">
+                                        Яндекс.Директ
+                                    </a></li>
+                                <li><a href="">
+                                        Google.Ads
+                                    </a></li>
+                                <li><a href="">
+                                        Локальный Контекст
+                                    </a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__row-wrapper">
+                            <h5 class="footer__row-title">Отрасли</h5>
+                            <ul>
+                                <li><a href="">
+                                        Торговля
+                                    </a></li>
+                                <li><a href="">
+                                        Промышленность
+                                    </a></li>
+                                <li><a href="">
+                                        Туризм
+                                    </a></li>
+                                <li><a href="">
+                                        Производство
+                                    </a></li>
+                                <li><a href="">
+                                        B2C услуги
+                                    </a></li>
+                                <li><a href="">
+                                        IT
+                                    </a></li>
+                                <li><a href="">
+                                        Строительство
+                                    </a></li>
+                                <li><a href="">
+                                        B2B услуги
+                                    </a></li>
+                                <li><a href="">
+                                        Недвижимость
+                                    </a></li>
+                                <li><a href="">
+                                        Fashion
+                                    </a></li>
+                                <li><a href="">
+                                        DIY
+                                    </a></li>
+                                <li><a href="">
+                                        Медицина
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__row">
+                        <div class="footer__row-wrapper">
+                            <h5 class="footer__row-title">Веб-аналитика</h5>
+                            <ul>
+                                <li><a href="">
+                                        Аудит систем аналитики
+                                    </a></li>
+                                <li><a href="">
+                                        Сквозая аналитика
+                                    </a></li>
+                                <li><a href="">
+                                        Яндекс метрика
+                                    </a></li>
+                                <li><a href="">
+                                        Google tag manager
+                                    </a></li>
+                                <li><a href="">
+                                        Google analytics
+                                    </a></li>
+                                <li><a href="">
+                                        Настройка Calltouch
+                                    </a></li>
+                                <li><a href="">
+                                        Настройка Roistat
+                                    </a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__row-wrapper">
+                            <h5 class="footer__row-title">Решения</h5>
+                            <ul>
+                                <li><a href="">
+                                        Лидогенерация
+                                    </a></li>
+                                <li><a href="">
+                                        Узнаваемость бренда
+                                    </a></li>
+                                <li><a href="">
+                                        Удержание клиентов
+                                    </a></li>
+                                <li><a href="">
+                                        Управление репутацией
+                                    </a></li>
+                                <li><a href="">
+                                        Разработка стратегии
+                                    </a></li>
+                                <li><a href="">
+                                        Личная консультация
+                                    </a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__row-wrapper">
+                            <h5 class="footer__row-title">Сервисы</h5>
+                            <ul>
+                                <li><a href="">
+                                        Инструменты для бизнеса
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__row">
+                        <div class="footer__row-wrapper">
+                            <h5 class="footer__row-title">Продвижение по миру</h5>
+                            <ul>
+                                <li><a href="">
+                                        Аудит рекламы
+                                    </a></li>
+                                <li><a href="">
+                                        Google.Ads
+                                    </a></li>
+                                <li><a href="">
+                                        Западное SEO
+                                    </a></li>
+                                <li><a href="">
+                                        Инста + ФБ
+                                    </a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__row-wrapper">
+                            <h5 class="footer__row-title">Таргет</h5>
+                            <ul>
+                                <li><a href="">
+                                        Таргетинг
+                                    </a></li>
+                                <li><a href="">
+                                        Аудит рекламы
+                                    </a></li>
+                                <li><a href="">
+                                        ВК
+                                    </a></li>
+                                <li><a href="">
+                                        Май таргет
+                                    </a></li>
+                                <li><a href="">
+                                        Инста + ФБ
+                                    </a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__row-wrapper">
+                            <h5 class="footer__row-title">База знаний</h5>
+                            <ul>
+                                <li><a href="">
+                                        Сделай сам
+                                    </a></li>
+                                <li><a href="">
+                                        Обучение
+                                    </a></li>
+                                <li><a href="">
+                                        Партнерская программа
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_bottom">
+                    <div class="footer__row first">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                            <path
+                                d="M0.239688 7.58997C0.49965 7.84265 0.759611 7.92444 1.27256 7.93173L6.89724 7.95392C6.94923 7.95392 6.99362 7.96153 7.01613 7.98373C7.03832 8.00592 7.04561 8.05062 7.04561 8.10261L7.0678 13.7277C7.07541 14.2404 7.1572 14.5003 7.41716 14.7603C7.76653 15.117 8.25697 15.0577 8.62091 14.701C8.8143 14.5076 8.97027 14.1884 9.11135 13.891L14.7956 1.63102C15.0927 1.0071 15.0556 0.546131 14.7513 0.248754C14.4536 -0.0555977 13.9929 -0.0926907 13.369 0.204369L1.10897 5.88877C0.811604 6.02985 0.492358 6.18583 0.298972 6.37922C-0.0576825 6.74318 -0.116966 7.23331 0.239688 7.58997ZM1.7481 6.80278C1.74049 6.78059 1.75539 6.75839 1.80009 6.73588L13.5621 1.33301C13.6217 1.31081 13.6512 1.31081 13.6737 1.32572C13.6886 1.34791 13.6886 1.37771 13.6661 1.43731L8.26458 13.1996C8.24238 13.2443 8.22019 13.2592 8.198 13.2515C8.18278 13.2515 8.16059 13.2221 8.16059 13.1923L8.19768 7.32208C8.19768 7.1363 8.13111 7.01773 8.05661 6.94322C7.9821 6.86904 7.86322 6.80214 7.67776 6.80214L1.8077 6.83924C1.7779 6.83924 1.74842 6.81704 1.74842 6.80214"
+                                fill="#CEF78F" />
+                        </svg>Санкт-Петербург, Набережная “Карповки” 5
+                    </div>
+                    <div class="footer__row">
+                        <a href="tel:(+7) 812 507 81 77" class="tel">
+                            (+7) 812 507 81 77
+                            <svg xmlns="http://www.w3.org/2000/svg" width="142" height="4" viewBox="0 0 142 4"
+                                fill="none">
+                                <path
+                                    d="M1 2.8734C29.2184 2.8734 57.5946 3.56725 85.7019 1.70622C103.944 0.498348 122.678 1.206 141 1.206"
+                                    stroke="#CEF78F" stroke-linecap="round" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="footer__row">
+                        <div class="socs">
+                            <a href="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
+                                    fill="none">
+                                    <g id="telegram">
+                                        <circle id="Ellipse 31" cx="20" cy="20" r="20" fill="#CEF78F" />
+                                        <path id="Vector"
+                                            d="M28.2952 12.1818L9.69018 18.7098C8.94148 19.0138 8.68825 19.6226 9.50922 19.953L14.2822 21.3331L25.8227 14.8436C26.4528 14.4362 27.0979 14.5448 26.5428 14.993L16.6311 23.1586L16.3197 26.6142C16.6081 27.1478 17.1362 27.1503 17.473 26.8851L20.2152 24.5242L24.9117 27.7241C26.0025 28.3117 26.596 27.9325 26.8307 26.8555L29.9112 13.5837C30.231 12.258 29.6856 11.6739 28.2952 12.1818Z"
+                                            fill="#252525" />
+                                    </g>
+                                </svg>
+                            </a>
+                            <a href="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
+                                    fill="none">
+                                    <g id="whatsapp">
+                                        <circle id="Ellipse 30" cx="20" cy="20" r="20" fill="#CEF78F" />
+                                        <path id="Vector"
+                                            d="M20 10C25.523 10 30 14.477 30 20C30 25.523 25.523 30 20 30C18.2328 30.0029 16.4967 29.5352 14.97 28.645L10.004 30L11.356 25.032C10.4651 23.5049 9.99706 21.768 10 20C10 14.477 14.477 10 20 10ZM16.592 15.3L16.392 15.308C16.2625 15.3159 16.136 15.3499 16.02 15.408C15.9115 15.4694 15.8125 15.5462 15.726 15.636C15.606 15.749 15.538 15.847 15.465 15.942C15.0951 16.4229 14.896 17.0133 14.899 17.62C14.901 18.11 15.029 18.587 15.229 19.033C15.638 19.935 16.311 20.89 17.199 21.775C17.413 21.988 17.623 22.202 17.849 22.401C18.9524 23.3725 20.2673 24.073 21.689 24.447L22.257 24.534C22.442 24.544 22.627 24.53 22.813 24.521C23.1043 24.506 23.3886 24.4271 23.646 24.29C23.777 24.2225 23.9048 24.1491 24.029 24.07C24.029 24.07 24.072 24.042 24.154 23.98C24.289 23.88 24.372 23.809 24.484 23.692C24.567 23.606 24.639 23.505 24.694 23.39C24.772 23.227 24.85 22.916 24.882 22.657C24.906 22.459 24.899 22.351 24.896 22.284C24.892 22.177 24.803 22.066 24.706 22.019L24.124 21.758C24.124 21.758 23.254 21.379 22.722 21.137C22.6663 21.1127 22.6067 21.0988 22.546 21.096C22.4776 21.089 22.4085 21.0967 22.3433 21.1186C22.2781 21.1405 22.2183 21.1761 22.168 21.223C22.163 21.221 22.096 21.278 21.373 22.154C21.3315 22.2098 21.2744 22.2519 21.2088 22.2751C21.1433 22.2982 21.0723 22.3013 21.005 22.284C20.9399 22.2665 20.876 22.2445 20.814 22.218C20.69 22.166 20.647 22.146 20.562 22.11C19.9881 21.8595 19.4567 21.5211 18.987 21.107C18.861 20.997 18.744 20.877 18.624 20.761C18.2306 20.3842 17.8877 19.958 17.604 19.493L17.545 19.398C17.5026 19.3342 17.4684 19.2653 17.443 19.193C17.405 19.046 17.504 18.928 17.504 18.928C17.504 18.928 17.747 18.662 17.86 18.518C17.97 18.378 18.063 18.242 18.123 18.145C18.241 17.955 18.278 17.76 18.216 17.609C17.936 16.925 17.646 16.244 17.348 15.568C17.289 15.434 17.114 15.338 16.955 15.319C16.901 15.313 16.847 15.307 16.793 15.303C16.6587 15.2963 16.5241 15.2977 16.39 15.307L16.592 15.3Z"
+                                            fill="#252525" />
+                                    </g>
+                                </svg>
+                            </a>
+                            <a href="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
+                                    fill="none">
+                                    <circle cx="20" cy="20" r="20" fill="#CEF78F" />
+                                    <path
+                                        d="M28.2952 12.1818L9.69018 18.7098C8.94148 19.0138 8.68825 19.6226 9.50922 19.953L14.2822 21.3331L25.8227 14.8436C26.4528 14.4362 27.0979 14.5448 26.5428 14.993L16.6311 23.1586L16.3197 26.6142C16.6081 27.1478 17.1362 27.1503 17.473 26.8851L20.2152 24.5242L24.9117 27.7241C26.0025 28.3117 26.596 27.9325 26.8307 26.8555L29.9112 13.5837C30.231 12.258 29.6856 11.6739 28.2952 12.1818Z"
+                                        fill="#252525" />
+                                    <circle cx="20" cy="20" r="20" fill="#CEF78F" />
+                                    <path
+                                        d="M20 10C25.523 10 30 14.477 30 20C30 25.523 25.523 30 20 30C18.2328 30.0029 16.4967 29.5352 14.97 28.645L10.004 30L11.356 25.032C10.4651 23.5049 9.99706 21.768 10 20C10 14.477 14.477 10 20 10ZM16.592 15.3L16.392 15.308C16.2625 15.3159 16.136 15.3499 16.02 15.408C15.9115 15.4694 15.8125 15.5462 15.726 15.636C15.606 15.749 15.538 15.847 15.465 15.942C15.0951 16.4229 14.896 17.0133 14.899 17.62C14.901 18.11 15.029 18.587 15.229 19.033C15.638 19.935 16.311 20.89 17.199 21.775C17.413 21.988 17.623 22.202 17.849 22.401C18.9524 23.3725 20.2673 24.073 21.689 24.447L22.257 24.534C22.442 24.544 22.627 24.53 22.813 24.521C23.1043 24.506 23.3886 24.4271 23.646 24.29C23.777 24.2225 23.9048 24.1491 24.029 24.07C24.029 24.07 24.072 24.042 24.154 23.98C24.289 23.88 24.372 23.809 24.484 23.692C24.567 23.606 24.639 23.505 24.694 23.39C24.772 23.227 24.85 22.916 24.882 22.657C24.906 22.459 24.899 22.351 24.896 22.284C24.892 22.177 24.803 22.066 24.706 22.019L24.124 21.758C24.124 21.758 23.254 21.379 22.722 21.137C22.6663 21.1127 22.6067 21.0988 22.546 21.096C22.4776 21.089 22.4085 21.0967 22.3433 21.1186C22.2781 21.1405 22.2183 21.1761 22.168 21.223C22.163 21.221 22.096 21.278 21.373 22.154C21.3315 22.2098 21.2744 22.2519 21.2088 22.2751C21.1433 22.2982 21.0723 22.3013 21.005 22.284C20.9399 22.2665 20.876 22.2445 20.814 22.218C20.69 22.166 20.647 22.146 20.562 22.11C19.9881 21.8595 19.4567 21.5211 18.987 21.107C18.861 20.997 18.744 20.877 18.624 20.761C18.2306 20.3842 17.8877 19.958 17.604 19.493L17.545 19.398C17.5026 19.3342 17.4684 19.2653 17.443 19.193C17.405 19.046 17.504 18.928 17.504 18.928C17.504 18.928 17.747 18.662 17.86 18.518C17.97 18.378 18.063 18.242 18.123 18.145C18.241 17.955 18.278 17.76 18.216 17.609C17.936 16.925 17.646 16.244 17.348 15.568C17.289 15.434 17.114 15.338 16.955 15.319C16.901 15.313 16.847 15.307 16.793 15.303C16.6587 15.2963 16.5241 15.2977 16.39 15.307L16.592 15.3Z"
+                                        fill="#252525" />
+                                    <circle cx="20" cy="20" r="20" fill="#CEF78F" />
+                                    <path
+                                        d="M23.5569 21.906L23.1019 22.359C23.1019 22.359 22.0189 23.435 19.0639 20.497C16.1089 17.559 17.1919 16.483 17.1919 16.483L17.4779 16.197C18.1849 15.495 18.2519 14.367 17.6349 13.543L16.3749 11.86C15.6109 10.84 14.1359 10.705 13.2609 11.575L11.6909 13.135C11.2579 13.567 10.9679 14.125 11.0029 14.745C11.0929 16.332 11.8109 19.745 15.8149 23.727C20.0619 27.949 24.0469 28.117 25.6759 27.965C26.1919 27.917 26.6399 27.655 27.0009 27.295L28.4209 25.883C29.3809 24.93 29.1109 23.295 27.8829 22.628L25.9729 21.589C25.1669 21.152 24.1869 21.28 23.5569 21.906Z"
+                                        fill="#252525" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer__row">
+                        <ul class="pol">
+                            <li><a href="">
+                                    Политика конфиденциальности
+                                </a></li>
+                            <li><a href="">
+                                    Публичная оферта
+                                </a></li>
+                            <li><a href="">
+                                    Реквизиты
+                                </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script src="/script.js"></script>
+</body>
+
+</html>
